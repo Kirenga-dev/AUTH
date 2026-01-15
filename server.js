@@ -9,6 +9,8 @@ dbConnect();
 
 app.use(express.json());
 
+const User = require('./modules/User');
+
 app.get('/', (req, res) => {
     res.json({
         message: "welcome to my DB connection"
