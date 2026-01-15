@@ -8,6 +8,8 @@ const dbConnection = async () => {
     }
     catch (error) {
         console.error("Database failed to connect");
-        proce
+        process.exit(1)
     }
-}
+};
+
+module.exports = dbConnection;
